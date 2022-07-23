@@ -1,0 +1,45 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.neon-text{
+    color: white;
+    text-shadow: 0 0 5px var(--color),
+                0 0 25px var(--color),
+                0 0 50px var(--color),
+                0 0 100px var(--color);
+}
+
+.neon-box{
+    background-color: white;
+    border: 2px solid white;
+    box-shadow: 0 0 5px var(--color),
+                0 0 25px var(--color),
+                0 0 50px var(--color),
+                0 0 100px var(--color);
+}
+
+.neon-box-pulse{
+    background-color: white;
+    animation: pulse-box var(--time) infinite linear;
+    border: 2px solid white;
+}
+.neon-text-pulse{
+    color: white;
+    animation: pulse-text var(--time) infinite linear;
+}
+
+@keyframes pulse-box{
+    25%{box-shadow: 0 0 100px var(--color), 0 0 25px var(--color), 0 0 5px var(--color);};
+    50%{box-shadow: 0 0 75px var(--color), 0 0 50px var(--color), 0 0 5px var(--color);};
+    75%{box-shadow: 0 0 50px var(--color), 0 0 75px var(--color), 0 0 5px var(--color);};
+    100%{box-shadow: 0 0 25px var(--color), 0 0 100px var(--color), 0 0 5px var(--color);};
+}
+
+@keyframes pulse-text{
+    25%{text-shadow: 0 0 100px var(--color), 0 0 25px var(--color), 0 0 5px var(--color);};
+    50%{text-shadow: 0 0 75px var(--color), 0 0 50px var(--color), 0 0 5px var(--color);};
+    75%{text-shadow: 0 0 50px var(--color), 0 0 75px var(--color), 0 0 5px var(--color);};
+    100%{text-shadow: 0 0 25px var(--color), 0 0 100px var(--color), 0 0 5px var(--color);};
+}
+
