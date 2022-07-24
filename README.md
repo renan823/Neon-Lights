@@ -1,14 +1,18 @@
-<h1 align="center">Neon Lights</h1>
-<p align="center">Neon Lights é um biblioteca que disponibiliza paletas neon para seus projetos que envolvam CSS.</p>
+# Neon Lights
 
-<h2 align="center">Documentação</h2>
-<p>Para utilizar os efeitos é bem simples, basta apenas fazer o download do arquivo "neon.css" (no repositório oficial) e colocá-lo em seu projeto, utilizando a seguinte sintaxe: <br><span> "<link rel='styleshee' href='path/to/neon.css'>"</span><br>
+## Sobre
+<p align="justify">Neon Lights é uma biblioteca que inclui cores brilhantes no estilo neon, juntamente com suas animações</p>
 
+## Docs
+### Importação
+<p>Para utilizar suas propriedades basta fazer o download do arquivo "neon.css", encontrado neste repositório. Após o download coloque-o em seu projeto e importe o arquivo.</p>
+~~~html
+<link rel="stylesheet" href="path/to/neon.css">
+~~~
 
+### Texto
+* Texto estático: 
+    ~~~html 
+    <p class="neon-text" style="--color: #00ffff">Hello</p>
+    ~~~
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
-<p>Próximos passos:</p>
-<ul type="square">
-  <li>Disponibilizar novas animações</li>
-  <li>Disponibilizar estilos para React/React-Native</li>
-</ul>
